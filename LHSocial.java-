@@ -1,0 +1,51 @@
+
+import java.io.*;
+public class LHSocial
+{
+    public void LHSocial ()throws IOException
+    {
+        InputStreamReader isr = new InputStreamReader (System.in);
+        BufferedReader br = new BufferedReader (isr); 
+        Logo objLogo = new Logo ();
+        objLogo.displogo();
+        System.out.println ("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0");
+        System.out.println ("O                                      O");
+        System.out.println ("O        Welcome to LHSocial :)        O");
+        System.out.println ("O  Here you can share your views with  O");
+        System.out.println ("O  with your schoolmates and teachers  O");
+        System.out.println ("O   ask your doubts, view notices      O");
+        System.out.println ("O          and upcomming events.       O");
+        System.out.println ("O                                      O");
+        System.out.println ("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+        String pause = br.readLine();
+        System.out.println ("\f");
+        header ();
+        System.out.println (" Please enter the numeric value or spell the number adjecent to your choice: 1) Notice.                                             ");
+        System.out.println ("                                                                             2) Posts.                                              ");
+        System.out.println ("                                                                             3) Events");
+        String choice= br.readLine();
+
+        if(choice.equalsIgnoreCase("one") || choice.equals("1"))
+        {
+            header ();
+           System.out.println();
+           System.out.println ();
+        }
+        else if(choice.equalsIgnoreCase("two") || choice.equals("2"))
+        {
+
+        }
+        else if(choice.equalsIgnoreCase("three") || choice.equals("3"))
+        {
+        }
+
+    }
+
+    public void header ()throws IOexception
+    {
+        System.out.println ("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+        System.out.println ("Principal Login                    LHSocial                                      "); //display date here 
+        System.out.println ("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+
+    }
+}

@@ -1,0 +1,39 @@
+
+import java.io.*;
+public class Logo
+{
+    public void displogo ()throws IOException
+    {
+        InputStreamReader isr = new InputStreamReader (System.in);
+        BufferedReader br = new BufferedReader (isr);
+        System.out.println ("");
+        System.out.println ("");
+        System.out.println ("");
+        System.out.println ("");
+        System.out.println ("");
+        System.out.println ("      ");                                           
+        System.out.println ("\t\t\t                                         **");
+        System.out.println ("\t\t\t**               **        **          **");
+        System.out.println ("\t\t\t**               **        **        **");
+        System.out.println ("\t\t\t**               **        **       **");
+        System.out.println ("\t\t\t**               ************       **");
+        System.out.println ("\t\t\t**               ************        **");
+        System.out.println ("\t\t\t**               **        **          **");
+        System.out.println ("\t\t\t************     **        **            **");
+        System.out.println ("\t\t\t************     **        **              **");
+        System.out.println ("\t\t\t                                            **");
+        System.out.println ("\t\t\t                                            **");
+        System.out.println ("\t\t\t                                           **");
+        System.out.println ("\t\t\t                                          **     ****          ****   ********      **     **");
+        System.out.println ("\t\t\t                                        **     **    **      **          **       **  **   **");
+        System.out.println ("\t\t\t                                      **      **      **    **           **      **    **  ** ");
+        System.out.println ("\t\t\t                                   **        **       **    **           **      ********  **");
+        System.out.println ("\t\t\t                                 **          **       **    **           **      **    **  **");
+        System.out.println ("\t\t\t                                **             **    **      **          **      **    **  **");
+        System.out.println ("\t\t\t                              **                 ****          ****   ********   **    **  **********");
+        System.out.println ("Press enter to continue... :)");
+        String pause = br.readLine ();
+        
+
+    }
+}

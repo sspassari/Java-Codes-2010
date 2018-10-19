@@ -1,0 +1,75 @@
+import java.io.*;
+public class Student
+{
+
+    String choice;
+    Index obj = new Index();
+    
+    InputStreamReader isr = new InputStreamReader (System.in);
+    BufferedReader br = new BufferedReader (isr);
+    
+    public void student () throws IOException
+    {
+        System.out.println ("1. Login");
+        System.out.println (" 2.SignUp");
+        System.out.println ("Enter your choice...");
+        choice = br.readLine();
+        if(choice.equalsIgnoreCase("one") || choice.equals("1"))
+        {
+            //validation 
+            login ();
+        }
+    }
+
+       
+    public void login ()throws IOException
+    {
+        System.out.println(" 1.Query");
+        System.out.println ("2.back");
+        System.out.println ("Enter your choice...");
+        choice = br.readLine();
+        if(choice.equalsIgnoreCase("one") || choice.equals("1"))
+        {
+            displayQuery ();
+        }
+        else if(choice.equalsIgnoreCase("two") || choice.equals("2"))
+        {
+            student ();
+        }
+    }
+
+    public void displayQuery ()throws IOException
+    {
+
+        System.out.println ("1. Ask query");
+        System.out.println ("2. View Reply");
+        System.out.println ("3. back");
+        System.out.println ("Enter your choice...");
+        choice = br.readLine();
+        if(choice.equalsIgnoreCase("one") || choice.equals("1"))
+        {
+            System.out.println ("Do you want to ask a query?");
+            choice= br.readLine();
+            System.out.println ("enter your ID");
+            //check id 
+            int id = Integer.parseInt (br.readLine ());
+            System.out.println ("Type your query below...");
+            obj.trackSq++;
+            obj.sq[obj.trackSq] = br.readLine();
+            
+
+        }
+        else if(choice.equalsIgnoreCase("three") || choice.equals("3"))
+        {
+           login ();
+            //check id 0
+            
+            obj.trackSq++;
+            obj.sq[obj.trackSq] = br.readLine();
+            
+
+        }
+
+    }
+}
+

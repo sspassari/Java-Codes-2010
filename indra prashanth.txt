@@ -1,0 +1,14 @@
+#include<sutdio.h>
+/*this program demonstrates I/O in c program*/
+
+main()
+{
+   /* variable declarations */
+   char name[30];/* a character array */
+   int age;
+   float marks;
+   char grade;
+    
+      /*Reading user input */
+   printf("Enter name and age :");
+   scanf("
